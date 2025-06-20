@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f2e8cf;
+  color: #3b3f36;
+}
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+section {
+  margin: 12px 16px;
+  padding: 12px;
+  max-width: 1800px;
+}
+/* Header & Nav */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 2rem; /* More vertical spacing */
+  background-color: #dad2bc; /* Warm tan */
+  border-bottom: 1px solid #b8ad9e; /* Subtle separator */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04); /* Soft depth */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.main-nav {
+  display: flex;
+  gap: 20;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.main-nav a {
+  margin-left: 1.5rem;
+  /* color: white; */
+
+  color: #4b3f30;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2rem; /* ← bump up from default (~16px) */
+  letter-spacing: 0.5px; /* optional: adds subtle clarity */
+  justify-content: space;
+  align-items: center;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+  color: #a26769; /* soft contrast highlight */
+}
+
+/* Hero Section with Full Overlay */
+.section-hero {
+  background-color: #f2e8cf;
+  padding: 6rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4rem;
+  max-width: 1200px;
+}
+
+.hero-cta {
+  max-width: 600px;
+  color: #3b3f36;
+}
+
+.hero-cta h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.hero-cta p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.hero-content img {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+
+.cta-button {
+  background-color: #a26769;
+  color: #ffffff;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.learn-button {
+  background-color: #ffffff;
+  color: #3b3f36;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #8e5a60;
+}
+
+/* Trust Section */
+
+.section-trust {
+  margin: 1rem 1rem;
+  /* @TODO Third opinion: whats better 1rem or 2rem (1rem team) */
+  padding: 2rem;
+  background-color: #8e9775;
+  color: #f9f9f4;
+  font-family: sans-serif;
+
+  border-radius: 12px;
+}
+
+.section-trust .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.section-trust h2 {
+  text-align: center;
+}
+
+.section-trust text {
+}
+
+.text {
+  flex: 1;
+  min-width: 250px;
+}
+header {
+  background-color: #fef9f1;
+}
+.cta-button {
+  background-color: #a26769;
+  color: #ffffff;
+}
+
+.section-service .text {
+  padding: 16px;
+  color: #3b3f36;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  justify-content: space-evenly;
+}
+
+.section-service h1 {
+  margin: 12px 0;
+  color: #3b3f36;
+}
+
+.grid--1x2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.service img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  justify-items: center;
+}
+
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+}
